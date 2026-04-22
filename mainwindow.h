@@ -17,7 +17,18 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private:
-    Ui::MainWindow *ui;
+private slots:
+    // Кнопка выбора файла
+    void on_buttonSelectFile_clicked();
+
+    // Кнопка загрузки данных
+    void on_buttonLoadData_clicked();
+
+    // Кнопка расчёта метрик
+    void on_buttonCalculateMetrics_clicked();
+
+    private:
+              Ui::MainWindow *ui;
 };
+
 #endif // MAINWINDOW_H

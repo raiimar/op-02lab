@@ -9,11 +9,23 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    entrypoint.cpp \
+    iterator.cpp \
+    list.cpp \
+    logic.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    parser.cpp
 
 HEADERS += \
-    mainwindow.h
+    appcontext.h \
+    data.h \
+    entrypoint.h \
+    iterator.h \
+    list.h \
+    logic.h \
+    mainwindow.h \
+    parser.h
 
 FORMS += \
     mainwindow.ui

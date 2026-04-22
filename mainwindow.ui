@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>980</width>
-    <height>723</height>
+    <width>1073</width>
+    <height>786</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -109,6 +109,19 @@ QHeaderView::section {
      <number>10</number>
     </property>
     <item>
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Orientation::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
      <layout class="QHBoxLayout" name="horizontalLayoutContent">
       <property name="spacing">
        <number>10</number>
@@ -192,38 +205,10 @@ QHeaderView::section {
              </property>
             </widget>
            </item>
-           <item row="1" column="1">
-            <widget class="QLineEdit" name="lineEditMedian">
-             <property name="readOnly">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
            <item row="4" column="0">
             <widget class="QLabel" name="labelMax">
              <property name="text">
               <string>Max:</string>
-             </property>
-            </widget>
-           </item>
-           <item row="4" column="1">
-            <widget class="QLineEdit" name="lineEditMax">
-             <property name="readOnly">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="1">
-            <widget class="QLineEdit" name="lineEditMin">
-             <property name="readOnly">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="0">
-            <widget class="QLabel" name="labelMin">
-             <property name="text">
-              <string>Min:</string>
              </property>
             </widget>
            </item>
@@ -247,6 +232,9 @@ QHeaderView::section {
                <height>220</height>
               </size>
              </property>
+             <property name="focusPolicy">
+              <enum>Qt::FocusPolicy::WheelFocus</enum>
+             </property>
              <property name="pixmap">
               <pixmap resource="resources.qrc">:/assets/sidebar_illustration.svg</pixmap>
              </property>
@@ -255,6 +243,34 @@ QHeaderView::section {
              </property>
              <property name="alignment">
               <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="labelMin">
+             <property name="text">
+              <string>Min:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="lineEditMax">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEditMedian">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEditMin">
+             <property name="readOnly">
+              <bool>true</bool>
              </property>
             </widget>
            </item>
@@ -267,7 +283,7 @@ QHeaderView::section {
        <widget class="QTableWidget" name="tableWidgetData">
         <property name="minimumSize">
          <size>
-          <width>450</width>
+          <width>705</width>
           <height>220</height>
          </size>
         </property>
@@ -316,6 +332,19 @@ QHeaderView::section {
       </layout>
      </widget>
     </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Orientation::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -323,8 +352,8 @@ QHeaderView::section {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>980</width>
-     <height>25</height>
+     <width>1073</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>
